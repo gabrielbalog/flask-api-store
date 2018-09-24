@@ -17,6 +17,10 @@ app.config['JWT_BLACKLIST_TOKEN_CHECKS'] = ['access', 'refresh']  # allow blackl
 app.secret_key = 'jose'  # could do app.config['JWT_SECRET_KEY'] if we prefer
 api = Api(app)
 
+@app.before_first_request
+def create_tables():
+	db.create_all()
+
 jwt = JWTManager(app)
 
 """
