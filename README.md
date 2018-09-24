@@ -6,7 +6,7 @@ Sua utilização é feita pelo próprio compilador de linha de comando do python
 
 O armazenamento pode ser feito localmente (arquivo data.db) ou via integração com banco de dados.
 
-O App pode ser testado em https://balog-api-store.herokuapp.com/
+O App pode ser testado em https://balog-api-store.herokuapp.com/stores
 
 
 
@@ -42,7 +42,7 @@ $ source venv/bin/activate
 $ python app.py
 ```
 
-Rodados os comandos abaixo basta acessar a url http://localhost:5000/stores para que possa ser visualizado um retorno de JSON.
+Rodados os comandos acima basta acessar a url http://localhost:5000/stores para que possa ser visualizado um retorno de JSON.
 
 **Pode ser necessário instalar o python3-dev, para isso basta instalar via apt ou yum.**
 
